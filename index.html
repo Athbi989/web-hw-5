@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Tasks List</title>
+    <link rel="stylesheet"
+          href="./assets/style.css">
+</head>
+
+<body>
+
+    <div class="limiter">
+        <h2>قائمة مهامي الخاصة</h2>
+        <div class="form-input">
+            <input type="button" class="buttonInput" value="إضافة مهمة" onclick="addTask()">
+            <input type="text" class="textInput" id="task_input">
+        </div>
+        <div class="container">
+            <div class="wrap">
+                <div class="table">
+                    <!-- Table coulmn -->
+                    <div class="row header">
+                        <div class="cell">
+                            #
+                        </div>
+                        <div class="cell">
+                            المهمة
+                        </div>
+                        <div class="cell">
+                            تاريخ التسجيل
+                        </div>
+                        <div class="cell">
+                            مسح
+                        </div>
+                    </div>
+                    <!-- Table data goes here from js file -->
+                    <div id="data-table" style="display: table-row-group;">
+                        <div class="row">
+                            <div class="cell"
+                                data-title="Full Name">
+                                0
+                            </div>
+                            <div class="cell"
+                                data-title="Age">
+                                لايوجد
+                            </div>
+                            <div class="cell"
+                                data-title="Job Title">
+                                لايوجد
+                            </div>
+                            <div class="cell"
+                                data-title="Location">
+                                <input type="button" class="buttonInput button-red" value="مسح">
+                            </div>
+                        </div>
+                    </div>
+   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
